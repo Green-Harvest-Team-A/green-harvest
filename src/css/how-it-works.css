@@ -336,6 +336,7 @@
     left: 640px;
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
   .images {
     display: flex;
