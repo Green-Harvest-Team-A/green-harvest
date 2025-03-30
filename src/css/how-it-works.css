@@ -1,4 +1,4 @@
- * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -31,7 +31,7 @@
     gap: 10px;
     background-color: #7a3145;
     display: flex;
-    justify-content: center;  */
+    justify-content: center;
     align-items: center;
   }
   .meal-kichen {
@@ -51,12 +51,11 @@
     width: 335px;
     height: 192px;
     gap: 20px;
-    
   }
   .text-one {
     width: 335px;
     height: 112px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 600px;
     font-size: 28px;
     line-height: 28px;
@@ -64,7 +63,6 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: #fbfbfb;
-
   }
   .text-light {
     color: #d4bfc4;
@@ -72,7 +70,7 @@
   .paragraf {
     width: 335px;
     height: 60px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500px;
     font-size: 14px;
     line-height: 20px;
@@ -89,7 +87,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500px;
     font-size: 14px;
     line-height: 20px;
@@ -124,7 +122,7 @@
     counter-increment: listCounter;
     margin: 10px 0;
     position: relative;
-    padding-left: 50px; 
+    padding-left: 50px;
   }
   ol li::before {
     content: counter(listCounter);
@@ -188,8 +186,8 @@
     padding: 100px 64px 100px 64px;
     gap: 10px;
     background-color: #7a3145;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
   }
   .meal-kichen {
     radius: 30px rgba(20, 20, 20, 0.2);
@@ -216,7 +214,7 @@
   .text-one {
     width: 440px;
     height: 96px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 600px;
     font-size: 32px;
     line-height: 32px;
@@ -231,7 +229,7 @@
   .paragraf {
     width: 440px;
     height: 60px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500px;
     font-size: 16px;
     line-height: 20px;
@@ -248,7 +246,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500px;
     font-size: 16px;
     line-height: 20px;
@@ -281,7 +279,7 @@
     counter-increment: listCounter;
     margin: 10px 0;
     position: relative;
-    padding-left: 50px; 
+    padding-left: 50px;
   }
   ol li::before {
     content: counter(listCounter);
@@ -347,7 +345,7 @@
     gap: 10px;
     background-color: #7a3145;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
   }
   .meal-kichen {
     radius: 30px rgba(20, 20, 20, 0.2);
@@ -375,7 +373,7 @@
   .text-one {
     width: 440px;
     height: 96px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 600px;
     font-size: 32px;
     line-height: 32px;
@@ -390,7 +388,7 @@
   .paragraf {
     width: 440px;
     height: 60px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500px;
     font-size: 16px;
     line-height: 20px;
@@ -407,7 +405,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 70px;
-    font-family: "Inter Tight", sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500px;
     font-size: 16px;
     line-height: 20px;
@@ -439,7 +437,7 @@
     counter-increment: listCounter;
     margin: 10px 0;
     position: relative;
-    padding-left: 50px; 
+    padding-left: 50px;
   }
   ol li::before {
     content: counter(listCounter);
