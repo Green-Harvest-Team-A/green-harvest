@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 /* Mobil: 320px - 375px
 @media (max-width: 374px) {
   
@@ -17,16 +11,16 @@
     display: none;
   }
   .how-it-works {
-    margin: 0 auto;
-    width: 100%;
     top: 840px;
-    width: 375px;
-    height: 1208px;
+    /* width: 375px; */
+    /* height: 1208px; */
+    margin: 0 auto;
+    max-width: 100%;
   }
   .images {
     display: flex;
-    width: 375px;
-    height: 532px;
+    /* width: 375px; */
+    /* height: 532px; */
     padding: 40px 20px 40px 20px;
     gap: 10px;
     background-color: #7a3145;
@@ -41,11 +35,20 @@
   }
 
   .section {
-    width: 375px;
-    height: 676px;
+    /* width: 375px; */
+    /* height: 676px; */
     padding: 80px 20px 80px 20px;
     gap: 40px;
     background-color: rgba(87, 111, 53, 1);
+  }
+  .tab-container {
+    display: flex;
+    /* width: 375px; */
+    /* height: 532px; */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .text {
     width: 335px;
@@ -63,6 +66,7 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: #fbfbfb;
+    text-align: left;
   }
   .text-light {
     color: #d4bfc4;
@@ -78,6 +82,7 @@
     vertical-align: middle;
     color: #fbfbfb;
     margin-top: 20px;
+    text-align: left;
   }
 
   .step-list-container {
@@ -106,6 +111,7 @@
     border-radius: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: left;
   }
 
   .text-black {
@@ -173,11 +179,14 @@
     display: none;
   }
   .how-it-works {
+    max-width: 768px;
     margin: 0 auto;
     width: 100%;
     width: 768px;
     height: 1548px;
     top: 1020px;
+    width: 100%;
+    /* border: 1px solid red; */
   }
   .images {
     display: flex;
@@ -188,6 +197,7 @@
     background-color: #7a3145;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid yellow; */
   }
   .meal-kichen {
     radius: 30px rgba(20, 20, 20, 0.2);
@@ -210,6 +220,7 @@
     width: 440px;
     height: 508px;
     gap: 52px;
+    /* border: 1px solid blue; */
   }
   .text-one {
     width: 440px;
@@ -222,6 +233,7 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: #fbfbfb;
+    text-align: left;
   }
   .text-light {
     color: #d4bfc4;
@@ -237,6 +249,7 @@
     vertical-align: middle;
     color: #fbfbfb;
     margin-top: 20px;
+    text-align: left;
   }
 
   .step-list-container {
@@ -263,6 +276,7 @@
     background-color: #fbfbfb;
     border-radius: 15px;
     margin-bottom: -10px;
+    text-align: left;
   }
 
   .text-black {
@@ -330,13 +344,18 @@
     display: none;
   }
   .how-it-works {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
     width: 640px;
     height: 760px;
     top: 796px;
     left: 640px;
     display: flex;
     flex-direction: row;
-    text-align: center;
+    align-items: center;
+    margin-left: 31px;
+    /* border: 5px solid orange; */
   }
   .images {
     display: flex;
@@ -364,6 +383,7 @@
     width: 440px;
     height: 180px;
     gap: 24px;
+    text-align: left;
   }
   .tab-container {
     width: 440px;
@@ -382,6 +402,7 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: #fbfbfb;
+    text-align: left;
   }
   .text-light {
     color: #d4bfc4;
@@ -397,6 +418,7 @@
     vertical-align: middle;
     color: #fbfbfb;
     margin-top: 20px;
+    text-align: left;
   }
 
   .step-list-container {
@@ -413,6 +435,7 @@
     letter-spacing: 0%;
     vertical-align: middle;
     color: rgba(133, 133, 133, 1);
+    text-align: left;
   }
   .step-list {
     width: 440px;
