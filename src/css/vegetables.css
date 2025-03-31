@@ -1,13 +1,18 @@
 
 
 .vegetables-section {
-    max-width: 100%;
+    width: 100%;
     background-color: #7A3145;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vegetables-container{
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .veg-title {
@@ -38,7 +43,7 @@
 .veg-card-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     list-style-type: none;
@@ -101,12 +106,23 @@
     height: 240px;
 }
 
+@media screen and (min-width: 375px) {
+    .vegetables-container{
+        max-width: 375px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     .vegetables-section{
-        max-width: 768px;
-        gap: 52px;
+        max-width: 100%;
         padding: 0 32px;
     }
+
+    .vegetables-container{
+        max-width: 768px;
+        gap: 52px;
+    }
+
     .veg-title{
         gap: 24px;
         margin-top: 100px;
@@ -131,7 +147,6 @@
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 28px;
-        justify-content: center;
     }
     .veg-card-list-item{
         width: calc(50% - 12px); /*Tablet için 2 sütun*/
@@ -144,10 +159,15 @@
 
 @media screen and (min-width: 1280px) {
     .vegetables-section{
-        max-width: 1280px;
-        gap: 52px;
+        max-width: 100%;
         padding: 0 100px;
     }
+
+    .vegetables-container{
+        max-width: 1280px;
+        gap: 52px;
+    }
+
     .veg-title{
         margin-top: 100px;
         gap: 24px;
