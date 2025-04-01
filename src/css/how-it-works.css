@@ -6,7 +6,7 @@
 /* MOBİL TASARIM */
 /* Mobil (Daha duyarlı hale gelme noktası: 375px+) */
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 375px) {
   .head-how-it-works {
     display: none;
   }
@@ -15,7 +15,7 @@
     /* width: 375px; */
     height: 1208px;
     margin: 0 auto;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
   .images {
     display: flex;
@@ -118,19 +118,19 @@
     font-weight: 700;
     color: rgba(20, 20, 20, 1);
   }
-  ol {
+  .order {
     counter-reset: listCounter;
     list-style: none;
     padding: 0;
   }
 
-  li {
+  .order-li {
     counter-increment: listCounter;
     margin: 10px 0;
     position: relative;
     padding-left: 50px;
   }
-  ol li::before {
+  .order .order-li::before {
     content: counter(listCounter);
     position: absolute;
     left: 0;
@@ -174,7 +174,7 @@
 
 /* TABLET TASARIM (768px - 1279px) */
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .head-how-it-works {
     display: none;
   }
@@ -283,19 +283,19 @@
     font-weight: 700;
     color: rgba(20, 20, 20, 1);
   }
-  ol {
+  .step-list-container {
     counter-reset: listCounter;
     list-style: none;
     padding: 0;
   }
 
-  li {
+  .step-list {
     counter-increment: listCounter;
     margin: 10px 0;
     position: relative;
     padding-left: 50px;
   }
-  ol li::before {
+  .step-list-container .step-list::before {
     content: counter(listCounter);
     position: absolute;
     left: 0;
@@ -344,7 +344,6 @@
     display: none;
   }
   .how-it-works {
-    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
     /* width: 640px; */
@@ -450,19 +449,19 @@
     font-weight: 700;
     color: rgba(20, 20, 20, 1);
   }
-  ol {
+  .step-list-container {
     counter-reset: listCounter;
     list-style: none;
     padding: 0;
   }
 
-  li {
+  .step-list {
     counter-increment: listCounter;
     margin: 10px 0;
     position: relative;
     padding-left: 50px;
   }
-  ol li::before {
+  .step-list-container .step-list::before {
     content: counter(listCounter);
     position: absolute;
     left: 0;
