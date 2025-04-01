@@ -61,20 +61,20 @@
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
     .hero-container{
-        max-width: 375px;
+        max-width: 767px;
     }  
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .hero-section {
         max-width: 100%;
         padding-top: 120px;
     }
 
     .hero-container{
-        max-width: 768px;
+        max-width: 1279px;
         gap: 52px;
     }   
 
@@ -86,7 +86,7 @@
     }
 
     .hero-head {
-        font-size: 76px;
+        font-size: 70px;
     }
 
     .hero-paragraph {
