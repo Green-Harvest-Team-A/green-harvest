@@ -1,7 +1,5 @@
-/*css code*/
-
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .red-title {
@@ -13,11 +11,11 @@
 .your-order-title {
   font-weight: 600;
   font-size: 64px;
+  line-height: 64px;
   letter-spacing: -0.015em;
   text-transform: uppercase;
   color: #fbfbfb;
   margin-bottom: 24px;
-  margin-left: 100px;
 }
 .your-order-title > span {
   color: #d4bfc4;
@@ -27,21 +25,18 @@
   font-size: 16px;
   line-height: 20px;
   color: #fbfbfb;
-  margin-left: 100px;
 }
 .your-order {
   background: #576f35;
-  margin: 0 auto;
+  padding: 100px;
 }
 .your-order-information {
   width: 751px;
+  margin-bottom: 52px;
 }
 .row {
   display: flex;
   gap: 32px;
-  padding-bottom: 100px !important;
-  padding-left: 100px !important;
-  padding-right: 100px !important;
 }
 .contact {
   background: #fbfbfb;
@@ -76,7 +71,20 @@
   width: 100%;
   padding: 16px 15px;
   height: 96px;
+  resize: none;
 }
+.form-textarea::placeholder,
+.form-input::placeholder {
+  color: #141414;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.form-textarea:focus,
+.form-input:focus {
+  outline: none;
+}
+
 .btn-red {
   color: #fbfbfb;
   background: #7a3145;
@@ -84,6 +92,60 @@
   border-radius: 30px;
   text-align: center;
   text-transform: uppercase;
+  transition: 0.5s ease;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  border: none;
+}
+.inp::placeholder {
+  color: black;
+}
+
+.inp:focus {
+  border-color: brown;
+}
+
+.inp:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.inp:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
+.inp:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.inp:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.btn-red:hover {
+  color: #7a3145;
+  background-color: #d4bfc4;
+}
+.btn-red:focus {
+  background-color: #fbfbfb;
+  color: #7a3145;
 }
 .social {
   background: #7a3145;
@@ -136,30 +198,23 @@
 .social-list li:last-child::after {
   content: '';
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
     max-width: 768px;
   }
   .your-order {
-  }
-  .your-order-title {
-    margin-left: 32px;
-    margin-right: 96px;
-  }
-  .your-order-content {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 100px 32px;
   }
   .your-order-information {
     width: 640px;
   }
   .row {
     flex-direction: column;
-    padding-bottom: 100px;
+    padding: 0 32px;
   }
   .contact {
     width: 100%;
+    padding: 72px 100px;
   }
   .social {
     width: 100%;
@@ -169,8 +224,7 @@
     margin-bottom: 52px;
   }
 }
-
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .your-order {
     padding: 80px 20px;
   }
@@ -185,17 +239,9 @@
     font-size: 48px;
     line-height: 52px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 80px;
-  }
-  .your-order-content {
-    margin-left: 20px;
-    margin-right: 20px;
   }
   .row {
     flex-direction: column;
-    padding-bottom: 80px;
   }
   .contact {
     width: 100%;
@@ -214,6 +260,9 @@
     height: 272px;
     margin-bottom: 20px;
   }
+  .social-content {
+    font-size: 14px;
+  }
   .social-list {
     flex-wrap: wrap;
     row-gap: 8px;
@@ -222,8 +271,7 @@
     margin: 0 8px;
   }
 }
-
-@media screen and (min-width: 320px) {
+@media (max-width: 374px) {
   .your-order {
     max-width: 100%;
     padding: 0;
@@ -252,39 +300,5 @@
   .social-list {
     flex-wrap: wrap;
     row-gap: 8px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    margin: 0 auto;
-  }
-  .row {
-    flex-direction: row;
-    padding: 0;
-  }
-  .your-order-title {
-    margin-left: 100px;
-  }
-  .your-order-content {
-    margin-left: 100px;
-  }
-  .your-order-information {
-    width: 751px;
-  }
-  .contact {
-    padding: 52px 48px;
-    width: 50%;
-  }
-
-  .social {
-    padding: 52px 48px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .social img {
-    height: 352px;
   }
 }
