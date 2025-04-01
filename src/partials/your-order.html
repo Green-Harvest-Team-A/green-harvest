@@ -18,14 +18,24 @@
           contact you !
         </h3>
         <form action="" class="contact-form">
-          <input type="text" class="form-input" placeholder="Full Name" />
-          <input type="text" class="form-input" placeholder="Email" />
+          <input type="text" class="form-input inp" placeholder="Full Name" />
+          <input
+            type="email"
+            class="form-input inp"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            )
+            required
+          />
+          <p class="text-valid">Başarılı!</p>
+          <p class="text-invalid">Geçersiz E-posta Lütfen Tekrar Deneyin!</p>
           <textarea
-            class="form-textarea"
-            id="comment"
+            class="form-textarea inp"
+            id=""
             placeholder="Comment"
           ></textarea>
           <button class="btn-red">SEND</button>
+                   
         </form>
       </div>
       <div class="social">
@@ -39,14 +49,14 @@
               >
             </li>
             <li class="social-list-item">
-              <a
-                href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
-                target="_blank"
+              <a href="https://m.youtube.com/@GoITTurkey" target="_blank"
                 >FACEBOOK</a
               >
             </li>
             <li class="social-list-item">
-              <a href="https://m.youtube.com/@GoITTurkey" target="_blank"
+              <a
+                href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                target="_blank"
                 >YOUTUBE</a
               >
             </li>
