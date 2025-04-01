@@ -23,35 +23,32 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
 
-    <script>
+   script>
       document.addEventListener("DOMContentLoaded", function () {
-        const mobileMenu = document.getElementById("mobileMenu");
-        const overlay = document.getElementById("overlay");
-        const hamburgerBtn = document.getElementById("hamburger-btn");
-        const closeBtn = document.getElementById("closeBtn");
-        const otherMenus = document.querySelector(".nav"); // Change this to target other menus as needed
-        const mainContent = document.querySelector("main"); // Select the <main> element
-
-    // Open Mobile Menu
-        hamburgerBtn.addEventListener("click", function () {
-          mobileMenu.classList.add("active");
-          overlay.classList.add("active");
-          otherMenus.classList.add("hidden"); // Hide other menus
-          mainContent.style.display = "none"; // Hide main content
-        });
-
-    // Close Mobile Menu
-        function closeMenu() {
-          mobileMenu.classList.remove("active");
-          overlay.classList.remove("active");
-          otherMenus.classList.remove("hidden"); // Show other menus when closed
-          mainContent.style.display = "block"; // Show main content again
-        }
-
-    closeBtn.addEventListener("click", closeMenu);
-    overlay.addEventListener("click", closeMenu);
+          const menuOpenBtn = document.querySelector('.mobile-menu-open');
+          const menuCloseBtn = document.querySelector('.mobile-btn-close');
+          const mobileMenu = document.querySelector('.mobile-menu');
+    
+          
+          mobileMenu.classList.add("hidden");
+          menuCloseBtn.style.display = "none";  
+          
+    
+          menuOpenBtn.addEventListener("click", function () {
+              mobileMenu.classList.remove("hidden");
+              mobileMenu.classList.add("active");
+              menuCloseBtn.style.display = "block";  
+              menuOpenBtn.style.display = "none"; 
+          });
+    
+          
+          menuCloseBtn.addEventListener("click", function () {
+              mobileMenu.classList.remove("active");
+              mobileMenu.classList.add("hidden");
+              menuCloseBtn.style.display = "none";  
+              menuOpenBtn.style.display = "block";
+          });
       });
-
     </script>
 
     <script type="module" crossorigin src="/green-harvest/index.js"></script>
