@@ -11,7 +11,6 @@
 .your-order-title {
   font-weight: 600;
   font-size: 64px;
-  line-height: 64px;
   letter-spacing: -0.015em;
   text-transform: uppercase;
   color: #fbfbfb;
@@ -48,7 +47,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.015rem;
   text-transform: uppercase;
   margin-bottom: 52px;
 }
@@ -84,7 +83,6 @@
 .form-input:focus {
   outline: none;
 }
-
 .btn-red {
   color: #fbfbfb;
   background: #7a3145;
@@ -99,46 +97,6 @@
   letter-spacing: 0.015em;
   border: none;
 }
-.inp::placeholder {
-  color: black;
-}
-
-.inp:focus {
-  border-color: brown;
-}
-
-.inp:not(:placeholder-shown):invalid {
-  border-color: red;
-}
-
-.inp:not(:placeholder-shown):valid {
-  border-color: green;
-}
-
-.text-valid,
-.text-invalid {
-  font-size: 14px;
-  padding-left: 20px;
-  margin-top: 4px;
-  display: none;
-}
-
-.text-valid {
-  color: green;
-}
-
-.text-invalid {
-  color: red;
-}
-
-.inp:not(:placeholder-shown):valid ~ .text-valid {
-  display: block;
-}
-
-.inp:not(:placeholder-shown):invalid ~ .text-invalid {
-  display: block;
-}
-
 .btn-red:hover {
   color: #7a3145;
   background-color: #d4bfc4;
@@ -197,6 +155,49 @@
 }
 .social-list li:last-child::after {
   content: '';
+}
+
+.form-input::placeholder {
+  color: black;
+}
+
+.form-input:hover {
+  border-color: #7a3145;
+}
+.form-input:focus {
+  border-color: #7a3145;
+}
+
+.form-input:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+
+.form-input:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
+}
+
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
+
+.text-valid {
+  color: #3cbc81;
+}
+
+.text-invalid {
+  color: #e74a3b;
+}
+
+.form-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.form-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
