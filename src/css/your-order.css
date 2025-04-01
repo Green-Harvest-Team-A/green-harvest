@@ -29,6 +29,7 @@
 }
 .your-order {
   background: #576f35;
+  margin: 0 auto;
 }
 .your-order-information {
   width: 751px;
@@ -144,6 +145,8 @@
   .row {
     flex-direction: column;
     padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .contact {
     width: 100%;
