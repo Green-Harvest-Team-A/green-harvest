@@ -17,6 +17,7 @@
   text-transform: uppercase;
   color: #fbfbfb;
   margin-bottom: 24px;
+  margin-left: 100px;
 }
 .your-order-title > span {
   color: #d4bfc4;
@@ -26,6 +27,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #fbfbfb;
+  margin-left: 100px;
 }
 .your-order {
   background: #576f35;
