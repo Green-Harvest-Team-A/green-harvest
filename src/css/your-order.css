@@ -143,6 +143,14 @@
   }
   .your-order {
   }
+  .your-order-title {
+    margin-left: 32px;
+    margin-right: 96px;
+  }
+  .your-order-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .your-order-information {
     width: 640px;
   }
@@ -177,6 +185,13 @@
     font-size: 48px;
     line-height: 52px;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+  }
+  .your-order-content {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .row {
     flex-direction: column;
