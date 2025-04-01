@@ -11,6 +11,7 @@
 .your-order-title {
   font-weight: 600;
   font-size: 64px;
+  line-height: 64px;
   letter-spacing: -0.015em;
   text-transform: uppercase;
   color: #fbfbfb;
