@@ -132,10 +132,9 @@
 .social-list {
   list-style: none;
   display: flex;
-}
-.social-list-item {
   padding-left: 0;
 }
+
 .social-list a {
   font-weight: 600;
   font-size: 18px;
