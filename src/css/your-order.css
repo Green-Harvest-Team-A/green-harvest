@@ -29,15 +29,14 @@
 }
 .your-order {
   background: #576f35;
-  padding: 100px;
 }
 .your-order-information {
   width: 751px;
-  margin-bottom: 52px;
 }
 .row {
   display: flex;
   gap: 32px;
+  padding-bottom: 100px;
 }
 .contact {
   background: #fbfbfb;
@@ -138,14 +137,13 @@
     max-width: 768px;
   }
   .your-order {
-    padding: 100px 32px;
   }
   .your-order-information {
     width: 640px;
   }
   .row {
     flex-direction: column;
-    padding: 0 32px;
+    padding-bottom: 100px;
   }
   .contact {
     width: 100%;
@@ -177,6 +175,7 @@
   }
   .row {
     flex-direction: column;
+    padding-bottom: 80px;
   }
   .contact {
     width: 100%;
