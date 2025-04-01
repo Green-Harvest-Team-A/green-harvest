@@ -172,14 +172,14 @@ footer {
     }
     .footer-contacts {
         width: 100%;  
-        padding-top: 0 !important;
+        padding: 0 !important;
     }
     .block-menu-list {
         padding-left: 20px !important;
         padding-right: 20px !important;
         padding-top: 40px !important;
         padding-bottom: 40px !important;
-        gap: 80px !important;
+        gap: 14px !important;
     }
    
     .block-menu-text{

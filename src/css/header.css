@@ -140,6 +140,7 @@ html, body {
         justify-content: center;
         align-items: center;
         list-style-type: none;
+        padding-inline-start: 0px !important;
         
     }
     .mobile-menu-list-item {
