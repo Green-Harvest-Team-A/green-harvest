@@ -34,7 +34,7 @@
   width: 751px;
   margin-bottom: 52px;
 }
-.row {
+.contact-section {
   display: flex;
   gap: 32px;
 }
@@ -210,7 +210,7 @@
   .your-order-information {
     width: 640px;
   }
-  .row {
+  .contact-section {
     flex-direction: column;
     padding: 0 32px;
   }
@@ -242,7 +242,7 @@
     line-height: 52px;
     margin-bottom: 20px;
   }
-  .row {
+  .contact-section {
     flex-direction: column;
   }
   .contact {
@@ -285,7 +285,7 @@
     width: 100%;
     padding: 40px 10px;
   }
-  .row {
+  .contact-section {
     flex-direction: column;
   }
   .contact {
