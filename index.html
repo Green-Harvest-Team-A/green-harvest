@@ -22,8 +22,37 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const menuOpenBtn = document.querySelector('.mobile-menu-open');
+          const menuCloseBtn = document.querySelector('.mobile-btn-close');
+          const mobileMenu = document.querySelector('.mobile-menu');
+    
+          
+          mobileMenu.classList.add("hidden");
+          menuCloseBtn.style.display = "none";  
+          
+    
+          menuOpenBtn.addEventListener("click", function () {
+              mobileMenu.classList.remove("hidden");
+              mobileMenu.classList.add("active");
+              menuCloseBtn.style.display = "block";  
+              menuOpenBtn.style.display = "none"; 
+          });
+    
+          
+          menuCloseBtn.addEventListener("click", function () {
+              mobileMenu.classList.remove("active");
+              mobileMenu.classList.add("hidden");
+              menuCloseBtn.style.display = "none";  
+              menuOpenBtn.style.display = "block";
+          });
+      });
+    </script>
+
     <script type="module" crossorigin src="/green-harvest/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/green-harvest/assets/index-BN0iBwS-.css">
+    <link rel="stylesheet" crossorigin href="/green-harvest/assets/index-BP_c5tq7.css">
   </head>
   <body>
     <header class="header">
