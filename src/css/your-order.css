@@ -33,11 +33,11 @@
 }
 .your-order-information {
   width: 751px;
-  margin-bottom: 52px;
 }
 .row {
   display: flex;
   gap: 32px;
+  padding-bottom: 100px;
 }
 .contact {
   background: #fbfbfb;
