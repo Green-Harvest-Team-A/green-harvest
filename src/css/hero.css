@@ -58,6 +58,8 @@
 @media screen and (min-resolution: 2x) {
     .hero-image {
         background-image: url("/img/heromobile@2x.jpg");
+        width: 50%;
+        height: 796px;
     }
 }
 
