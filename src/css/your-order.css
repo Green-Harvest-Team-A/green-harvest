@@ -138,7 +138,6 @@
     max-width: 768px;
   }
   .your-order {
-    margin: 0 auto;
   }
   .your-order-information {
     width: 640px;
@@ -162,7 +161,6 @@
 @media screen and (min-width: 375px) {
   .your-order {
     padding: 80px 20px;
-    margin: 0 auto;
   }
   .container {
     max-width: 100%;
