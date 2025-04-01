@@ -215,7 +215,6 @@ footer {
     }
     .footer-menu-contact {
         width: auto 0;
-        max-width: 1024px;
         display: grid; 
         grid-template-rows: auto auto;   
         margin: 0 auto;
@@ -236,6 +235,7 @@ footer {
     }
     .block-menu-list{
         gap: 24px;
+        margin: 0 !important;
     }
     .block-menu-text {
         font-weight: 600;
@@ -252,6 +252,10 @@ footer {
         grid-row: 2 / 3;
         text-align: left 
     }
+    .footer-contacts{
+        margin: 0 !important;
+    }
+}
     .footer-green-harvest-text{
         font-weight: 500;
         font-size: 16px;
@@ -276,5 +280,11 @@ footer {
 @media (min-width: 1280px) {
     footer{
         background-color: #7A3145;
+    }
+    .block-menu-list{
+        margin: 0 !important;
+    }
+    .footer-contacts{
+        margin: 0 !important;
     }
 }
