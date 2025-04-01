@@ -1,7 +1,7 @@
 .hero-section {
     width: 100%;
     background-color: #576F35;
-    padding-top: 0;
+    padding-top: 100px;
     padding-bottom: 0;
     padding-right: 0;
 }
@@ -58,8 +58,6 @@
 @media screen and (min-resolution: 2x) {
     .hero-image {
         background-image: url("/img/heromobile@2x.jpg");
-        width: 50%;
-        height: 796px;
     }
 }
 
@@ -73,7 +71,6 @@
     .hero-section {
         max-width: 100%;
         padding-top: 120px;
-           
     }
 
     .hero-container{
