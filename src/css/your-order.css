@@ -263,6 +263,12 @@
     flex-direction: row;
     padding: 0;
   }
+  .your-order-title {
+    margin-left: 100px;
+  }
+  .your-order-content {
+    margin-left: 100px;
+  }
   .your-order-information {
     width: 751px;
   }
