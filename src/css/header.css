@@ -241,7 +241,7 @@ html, body {
         position: fixed;
         top: 32px;
         right: 10px;
-        background: white;
+        background: transparent;
         border: none;
         cursor: pointer;
         z-index: 1000;
