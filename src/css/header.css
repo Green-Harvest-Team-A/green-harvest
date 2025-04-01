@@ -346,8 +346,6 @@ html, body {
 @media (min-width: 1280px) {
     .header{
         max-width: 1280px;
-        height: 60px;
-        padding-top: 50px;
         z-index: 1000;
     }
     .mobile-menu {
