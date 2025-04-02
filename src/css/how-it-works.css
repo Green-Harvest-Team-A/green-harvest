@@ -169,11 +169,17 @@ body {
 }
 
 @media (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
   .how-it-works-text {
     padding: 80px 20px 404px 20px;
   }
 }
 @media (min-width: 375px) {
+  .container {
+    width: 100%;
+  }
   .how-it-works {
     display: flex;
     flex-direction: column;
