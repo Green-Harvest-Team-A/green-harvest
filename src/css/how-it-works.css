@@ -145,92 +145,325 @@
 .step {
     color: #858585;
     margin: 0 auto;
+    width: 100%;
+    width: 768px;
+    height: 1548px;
+    top: 1020px;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .images {
+    display: flex;
+    width: 768px;
+    height: 840px;
+    padding: 100px 64px 100px 64px;
+    gap: 10px;
+    background-color: #7a3145;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+  }
+  .meal-kichen {
+    radius: 30px rgba(20, 20, 20, 0.2);
+    width: 640px;
+    height: 640px;
+  }
+  .section {
+    width: 768px;
+    height: 708px;
+    padding: 100px 164px 100px 164px;
+    gap: 10px;
+    background-color: rgba(87, 111, 53, 1);
+  }
+  .text {
+    width: 440px;
+    height: 180px;
+    gap: 24px;
+  }
+  .tab-container {
+    width: 440px;
+    height: 508px;
+    gap: 52px;
+    /* border: 1px solid blue; */
+  }
+  .text-one {
+    width: 440px;
+    height: 96px;
     font-family: 'Inter Tight', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0;
+    font-weight: 600px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #fbfbfb;
     text-align: left;
-    /*padding: 12px 25px 12px 24px;*/
+  }
+  .text-light {
+    color: #d4bfc4;
+  }
+  .paragraf {
+    width: 440px;
+    height: 60px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #fbfbfb;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .step-list-container {
+    width: 440px;
+    height: 276px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(133, 133, 133, 1);
+    margin-top: 55px;
+  }
+  .step-list {
+    width: 440px;
+    height: 90px;
+    padding: 12px 25px 12px 24px;
+    gap: 10px;
+    background-color: #fbfbfb;
+    border-radius: 15px;
+    margin-bottom: -10px;
+    text-align: left;
+  }
+
+  .text-black {
+    font-weight: 700;
+    color: rgba(20, 20, 20, 1);
+  }
+  .step-list-container {
+    counter-reset: listCounter;
+    list-style: none;
+    padding: 0;
+  }
+
+  .step-list {
+    counter-increment: listCounter;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 50px;
+  }
+  .step-list-container .step-list::before {
+    content: counter(listCounter);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    border: 5px solid rgba(212, 191, 196, 1);
+    border-radius: 50%;
+    background-color: rgba(122, 49, 69, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+    font-size: 18px;
+  }
+
+  .step1 {
+    width: 325px;
+    height: 40px;
+    margin-left: 90px;
+    gap: 24px;
+  }
+
+  .step2 {
+    width: 323px;
+    height: 20px;
+    margin-left: 90px;
+    gap: 24px;
+  }
+
+  .step3 {
+    width: 323px;
+    height: 40px;
+    margin-left: 90px;
+    gap: 24px;
+  }
 }
 
-.step0 {
-    padding: 5px 27px 12px 24px;
-}
+/*  DESKTOP TASARIM (1280px ve üstü) */
 
-.step1 {
-    padding: 12px 59px 12px 24px;
-}
+@media (min-width: 1280px) {
+  .head-how-it-works {
+    display: none;
+  }
+  .how-it-works {
+    width: 100%;
+    margin: 0 auto;
+    /* width: 640px; */
+    height: 760px;
+    top: 796px;
+    left: 640px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 5px solid orange; */
+  }
+  .images {
+    display: flex;
+    width: 640px;
+    height: 760px;
+    padding: 100px;
+    gap: 10px;
+    background-color: #7a3145;
+    justify-content: center;
+    align-items: center;
+  }
+  .meal-kichen {
+    radius: 30px rgba(20, 20, 20, 0.2);
+    width: 440px;
+    height: 560px;
+  }
+  .section {
+    width: 640px;
+    height: 760px;
+    padding: 100px 100px 160px 100px;
+    gap: 10px;
+    background-color: rgba(87, 111, 53, 1);
+  }
+  .text {
+    width: 440px;
+    height: 180px;
+    gap: 24px;
+    text-align: left;
+  }
+  .tab-container {
+    width: 440px;
+    height: 560px;
+    gap: 104px;
+    margin-top: -20px;
+  }
+  .text-one {
+    width: 440px;
+    height: 96px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    text-align: left;
+  }
+  .text-light {
+    color: #d4bfc4;
+  }
+  .paragraf {
+    width: 440px;
+    height: 60px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #fbfbfb;
+    margin-top: 20px;
+    text-align: left;
+  }
 
-.step2 {
-    padding: 12px 24px 12px 24px;
-}
+  .step-list-container {
+    width: 440px;
+    height: 276px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(133, 133, 133, 1);
+    text-align: left;
+  }
+  .step-list {
+    width: 440px;
+    height: 100px;
+    padding: 12px 25px 12px 24px;
+    gap: 10px;
+    background-color: #fbfbfb;
+    border-radius: 15px;
+    margin-bottom: 2px;
+  }
 
-@media screen and (min-width: 375px) and (max-width: 767px){
-    .how-container{
-        max-width: 767px;
-        margin: 0;
-    }
-    .step0 {
-        padding: 12px 27px 12px 24px;
-    }
-}
+  .text-black {
+    font-weight: 700;
+    color: rgba(20, 20, 20, 1);
+  }
+  .step-list-container {
+    counter-reset: listCounter;
+    list-style: none;
+    padding: 0;
+  }
 
-@media screen and (min-width: 768px) and (max-width: 1280px){
-    .how-container{
-        max-width: 1279px;
-        margin: 0;
-    }
-    .how-images-container{
-        padding: 100px 64px;
-    }
-    .how-text-container{
-        padding: 100px 164px;
-        gap: 52px;
-    }
-    .how-text{
-        gap: 24px;
-    }
-    .step0 {
-        padding: 12px 15px 12px 24px;
-    }
-    .step1 {
-        padding: 12px 17px 12px 24px;
-    }
-    .step2 {
-        padding: 12px 17px 12px 24px;
-    }
-}
+  .step-list {
+    counter-increment: listCounter;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 50px;
+  }
+  .step-list-container .step-list::before {
+    content: counter(listCounter);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    border: 5px solid rgba(212, 191, 196, 1);
+    border-radius: 50%;
+    background-color: rgba(122, 49, 69, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+    font-size: 18px;
+  }
 
-@media screen and (min-width: 1280px){
-    .how-container{
-        min-width: 1280px;
-        max-width: none;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-    }
-    .how-images-container{
-        flex: 1;
-    }
-    .how-text-container{
-        flex: 1;
-    }
-    .how-images-container{
-        padding: 100px 100px;
-    }
-    .how-text-container{
-        padding: 100px 100px;
-        gap: 104px;
-    }
-    .step-list-item{
-        gap: 24px;
-    }
-    .how-text{
-        width: 440px;
-    }
-    .how-list{
-        width: 440px;
-    }
+  .step1 {
+    width: 325px;
+    height: 40px;
+    margin-left: 90px;
+    gap: 24px;
+  }
+
+  .step2 {
+    width: 323px;
+    height: 20px;
+    margin-left: 90px;
+    gap: 24px;
+  }
+
+  .step3 {
+    width: 323px;
+    height: 40px;
+    margin-left: 90px;
+    gap: 24px;
+  }
 }
     
