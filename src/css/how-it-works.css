@@ -23,6 +23,9 @@ body {
   background-color: #fbfbfb;
 }
 /*mobile*/
+.container {
+  width: 100%;
+}
 .how-it-works {
   display: flex;
   flex-direction: column;
@@ -204,6 +207,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
   .images {
     max-width: 640px;
     height: 640px;
