@@ -5,6 +5,55 @@
 /* MOBİL TASARIM */
 /* Mobil (Daha duyarlı hale gelme noktası: 375px+) */
 
+@media (max-width: 374px) {
+  .head-advertisement {
+    display: none;
+  }
+  .advertisement {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    /* width: 375px; */
+    height: 472px;
+    top: 2048px;
+    padding: 80px 20px 80px 20px;
+    gap: 10px;
+    background-color: #fbfbfb;
+    /* margin-top: 20px; */
+    /* border: 1px solid red; */
+  }
+  .advertisement-container {
+    /* width: 335px; */
+    /* height: 312px; */
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-advertisement {
+    width: 335px;
+    height: 102px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.5%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: rgba(20, 20, 20, 1);
+    margin-top: 0%;
+    gap: 10px;
+  }
+  .discount {
+    display: flex;
+    border-radius: 12px;
+    background-color: rgba(87, 111, 53, 1);
+    color: rgba(251, 251, 251, 1);
+    width: 335px;
+    height: 102px;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 767px) {
   .head-advertisement {
     display: none;
