@@ -202,8 +202,6 @@ footer {
         align-items: left;
         margin: 0;
         gap: 16px;
-        width: 335px;
-        height: 56px;
         padding-left: 0;
         padding-top: 90px;
     }
@@ -276,6 +274,7 @@ footer {
     }
     .privacy{
         padding-bottom: 20px;
+        padding-top: 40px;
     }
 }
 @media (min-width: 1280px) {
