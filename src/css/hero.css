@@ -64,7 +64,11 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .hero-container{
         max-width: 767px;
-    }  
+    } 
+    .hero-text {
+        padding-right: 32px;
+        padding-left: 32px; 
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -121,10 +125,6 @@
         margin-left: 0;
     }
 
-    .hero-image{
-        background-image: url("/img/herodesktop.jpg");
-    }
-
     .hero-text {
         width: 504px;
         padding-top: 232px;
@@ -147,7 +147,7 @@
     }
 
     .hero-image {
-        width: 640px;
+        width: 50%;
         height: 796px;
         background-image: url("/img/herodesktop.jpg");
         position: absolute;
