@@ -177,6 +177,7 @@ footer {
     .block-menu-list {
         
         gap: 14px !important;
+        padding-inline-start: 0 !important;
     }
    
     .block-menu-text{
